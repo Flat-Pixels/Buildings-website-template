@@ -2,22 +2,23 @@
    Module/Box
    ======================= */
 
-.box {
+.box { position: relative; }
 
+.box-hero {
+  width: 430px;
+  float: left;
 }
 
-.box-head  {
-
+.box-hero__title {
+  font-family: $title-font2;
+  letter-spacing: -2px;
+  font-size: convertPxToEm( 60px );
+  line-height: 50px;
 }
 
-.box-title {
-
-}
-
-.box-body  {
-
-}
-
-.box-foot  {
-
+.box-hero__body {
+  margin: 35px 0 50px 0;
+  
+  font-size: convertPxToEm( 18px );
+  color: #4e4e4e;
 }

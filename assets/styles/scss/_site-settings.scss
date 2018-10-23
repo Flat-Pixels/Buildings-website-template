@@ -60,7 +60,7 @@
 $base-font: Roboto, Helvetica, Arial, sans-serif;
 $base-font2: "Open Sans", Helvetica, Arial, sans-serif;
 $title-font: FjallaOne, serif;
-$title-font_2: "PT Serif", FjallaOne, sans-serif;
+$title-font2: "PT Serif", FjallaOne, sans-serif;
 
 // Colors
 // -----------------------------
@@ -70,6 +70,10 @@ $secondary-color: #423f43;
 
 // Sizes
 $base-font-size: 16px;
+
+// White spaces
+$default-white-space: 85px;
+$secondary-white-space: 50px;
 
 // Functions
 @function convertPxToEm( $size ){

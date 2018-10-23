@@ -1,0 +1,32 @@
+.section-title{
+  text-align: center;
+  margin-bottom: $secondary-white-space;
+}
+
+.section-title__h {
+  position: relative;
+
+  display: inline-block;
+  padding: 0 150px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $primary-color;
+
+  &::before, &::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+
+    width: 100px;
+    height: 3px;
+
+    background-color: $primary-color;
+
+    transform: translateY( -50% );
+  }
+
+  &::before { left: 0; }
+  &::after { right: 0; }
+}
