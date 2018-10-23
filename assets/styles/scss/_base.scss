@@ -1,0 +1,29 @@
+/* ===========================
+   Base
+   =========================== */
+*,
+*::after,
+*::before { box-sizing: border-box; }
+
+//Reset the default white spaces
+body,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: $base-font;
+  background-color: $back-color;
+}
+
+h1,
+h2,
+h3 { font-family: $title-font; }
+
+h1 { font-size: convertPxToEm( 35px ); }
+
+h2 { font-size: convertPxToEm( 25px ); }
