@@ -104,7 +104,7 @@ img {
 .page-header {
   position: relative;
   width: 100%;
-  height: 75px;
+  /*height: 75px;*/
   /*
   * Hacker le wrapper
   * Du header
@@ -143,49 +143,70 @@ img {
   height: 300px;
   background-color: #423f43;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 300;
   text-align: center;
   color: white;
 }
 
 /* Modules */
-.main-menu {
-  position: relative;
-  z-index: 1;
+.clear-fix {
+  clear: both;
 }
 
-.main-menu__item {
+.--last {
+  margin: 0 !important;
+}
+
+/*------------------------------------*\
+  #SECTION-DEFAULT NAVIGATION
+\*------------------------------------*/
+.nav {
+  position: relative;
   display: inline-block;
+}
+
+.nav__item {
   margin-left: 20px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.125em;
+  color: #423f43;
   transition: all 0.2s;
 }
 
-.main-menu__item--light {
+/*------------------------------------*\
+  #SECTION-HEADER NAVIGATION
+\*------------------------------------*/
+.nav-primary {
+  z-index: 1;
+}
+
+.nav__item--light {
   color: white;
 }
 
-.main-menu__item--light:hover {
+.nav__item--light:hover {
   color: #796296;
 }
 
-.footer-menu {
+/*------------------------------------*\
+  #SECTION-FOOTER NAVIGATION
+\*------------------------------------*/
+.nav-footer-social {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.footer-menu__item {
+.nav__item--social-btn {
   width: 45px;
   height: 45px;
   margin: 50px;
 }
 
-.footer-menu__item svg {
+.nav__item--social-btn svg {
   fill: white;
   width: 100%;
   height: 100%;
@@ -198,12 +219,12 @@ img {
   position: relative;
 }
 
-.box-main-logo {
+.box-logo {
   display: block;
   width: 70px;
 }
 
-.box-main-logo img {
+.box-logo img {
   width: 100%;
 }
 
@@ -246,11 +267,13 @@ img {
   letter-spacing: -2px;
   font-size: 3.75em;
   line-height: 50px;
+  color: #423f43;
 }
 
 .box-hero__body {
   margin: 35px 0 50px 0;
   font-size: 1.125em;
+  font-weight: 300;
   color: #4e4e4e;
 }
 
@@ -282,14 +305,6 @@ img {
   margin: 0 auto;
 }
 
-.clear-fix {
-  clear: both;
-}
-
-.--last {
-  margin: 0 !important;
-}
-
 .section-title {
   text-align: center;
   margin-bottom: 50px;
@@ -300,7 +315,7 @@ img {
   display: inline-block;
   padding: 0 150px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   color: #796296;
 }
 
@@ -309,7 +324,7 @@ img {
   position: absolute;
   top: 50%;
   width: 100px;
-  height: 3px;
+  height: 2px;
   background-color: #796296;
   transform: translateY(-50%);
 }
@@ -322,6 +337,9 @@ img {
   right: 0;
 }
 
+/*
+* Default wrapper of houses cards
+*/
 .house-card-group {
   margin-bottom: 50px;
 }
@@ -342,7 +360,6 @@ img {
 
 .house-card__img img {
   width: 100%;
-  height: 100%;
 }
 
 .house-card__body {
@@ -350,10 +367,13 @@ img {
 }
 
 .house-card__title {
-  color: #423f43;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 1.5625em;
   font-weight: 300;
+}
+
+.house-card__title a:hover {
+  text-decoration: underline;
 }
 
 .house-card__specs-list {

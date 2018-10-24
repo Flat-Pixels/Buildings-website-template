@@ -4,12 +4,13 @@
 
 .box { position: relative; }
 
-.box-main-logo {
+.box-logo {
   display: block;
   width: 70px;
   
   img { width: 100%; }
 }
+
 /*
 * Wave shape tht contains
 * Building image of the home page
@@ -21,11 +22,13 @@
   left: 370px;
   bottom: -580px;
   overflow: hidden;
+
   background: url(../img/banner-home.jpg) no-repeat center / cover;
   -webkit-mask: url(../img/header_mask_home.png) no-repeat bottom left / cover;
 
   &::after {
     content: '';
+
     position: absolute;
     top: 0;
     right: 0;
@@ -50,11 +53,13 @@
   letter-spacing: -2px;
   font-size: convertPxToEm( 60px );
   line-height: 50px;
+  color: $secondary-color;
 }
 
 .box-hero__body {
   margin: 35px 0 50px 0;
   
   font-size: convertPxToEm( 18px );
+  font-weight: 300;
   color: #4e4e4e;
 }

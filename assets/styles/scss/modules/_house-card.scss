@@ -1,3 +1,6 @@
+/*
+* Default wrapper of houses cards
+*/
 .house-card-group { margin-bottom: $secondary-white-space; }
 
 .house-card {
@@ -16,20 +19,17 @@
   margin-right: 30px;
   background-color: white;
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  img { width: 100%; }
 }
 
 .house-card__body { width: calc( 100% - 510px); }
 
 .house-card__title {
-  color: #423f43;
-
   font-family: $base-font2;
   font-size: convertPxToEm( 25px );
   font-weight: 300;
+
+  a:hover { text-decoration: underline; }
 }
 
 .house-card__specs-list { margin: 40px 0; }

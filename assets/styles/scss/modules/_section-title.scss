@@ -10,7 +10,7 @@
   padding: 0 150px;
 
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   color: $primary-color;
 
   &::before, &::after {
@@ -20,7 +20,7 @@
     top: 50%;
 
     width: 100px;
-    height: 3px;
+    height: 2px;
 
     background-color: $primary-color;
 
