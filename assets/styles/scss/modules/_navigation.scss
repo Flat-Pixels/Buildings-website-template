@@ -1,10 +1,22 @@
 .main-menu {
-
+  position: relative;
+  z-index: 1;
 }
 
 .main-menu__item {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
+
+  font-family: $base-font2;
+  font-weight: 300;
+  font-size: convertPxToEm( 18px );
+  transition: all 0.2s;
+}
+
+.main-menu__item--light {
+  color: white;
+
+  &:hover { color: $primary-color; }
 }
 
 .footer-menu {
