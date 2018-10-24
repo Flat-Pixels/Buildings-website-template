@@ -70,6 +70,7 @@ html, body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   background-color: #f4f4f4;
   line-height: 1.5625em;
+  overflow-x: hidden;
 }
 
 h1,
@@ -169,6 +170,25 @@ img {
   position: relative;
 }
 
+/*
+* Wave shape tht contains
+* Building image of the home page
+*/
+.box-header-mask-home {
+  position: absolute;
+  top: -100px;
+  right: -400px;
+  left: 370px;
+  bottom: -580px;
+  overflow: hidden;
+  background: url(../img/banner-home.jpg) no-repeat center/cover;
+  -webkit-mask: url(../img/header_mask_home.png) no-repeat bottom left/cover;
+}
+
+/*
+* Description part
+* Of the home page
+*/
 .box-hero {
   width: 430px;
   float: left;
