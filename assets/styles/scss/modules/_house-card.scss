@@ -57,3 +57,25 @@
 }
 
 .house-card__desc { color: #6f6f6f; }
+
+/*
+* House card
+* With light theme
+*/
+.house-card--light {
+  .house-card__title a,
+  .house-card__spec,
+  .house-card__desc { color: white; }
+
+  .house-card__spec::before { background-color: white; }
+}
+
+/*
+* House card
+* With space before
+*/
+.house-card--push-in {
+  padding-left: 65px;
+
+  .house-card__body { width: calc( 100% - 575px); }
+}

@@ -222,6 +222,7 @@ img {
 .box-logo {
   display: block;
   width: 70px;
+  z-index: 2;
 }
 
 .box-logo img {
@@ -232,18 +233,12 @@ img {
 * Wave shape tht contains
 * Building image of the home page
 */
-.box-header-mask-home {
+.box-header-mask {
   position: absolute;
-  top: -100px;
-  right: -400px;
-  left: 370px;
-  bottom: -580px;
   overflow: hidden;
-  background: url(../img/banner-home.jpg) no-repeat center/cover;
-  -webkit-mask: url(../img/header_mask_home.png) no-repeat bottom left/cover;
 }
 
-.box-header-mask-home::after {
+.box-header-mask::after {
   content: '';
   position: absolute;
   top: 0;
@@ -253,6 +248,26 @@ img {
   background: linear-gradient(rgba(118, 94, 131, 0.3), rgba(73, 43, 83, 0.6));
 }
 
+.box-header-mask--home {
+  top: -100px;
+  right: -400px;
+  left: 370px;
+  bottom: -580px;
+  background: url(../img/banner-home.jpg) no-repeat center/cover;
+  -webkit-mask: url(../img/header_mask_home.png) no-repeat bottom left/cover;
+}
+
+.box-header-mask--buildings {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -820px;
+  padding-top: 135px;
+  background: url(../img/banner-buildings.jpg) no-repeat center/cover;
+  -webkit-mask: url(../img/header_mask_buildings.png) no-repeat bottom left/cover;
+  text-align: right;
+}
+
 /*
 * Description part
 * Of the home page
@@ -260,6 +275,12 @@ img {
 .box-hero {
   width: 430px;
   float: left;
+}
+
+.box-hero--search {
+  float: right;
+  width: 450px;
+  text-align: right;
 }
 
 .box-hero__title {
@@ -400,4 +421,89 @@ img {
 
 .house-card__desc {
   color: #6f6f6f;
+}
+
+/*
+* House card
+* With light theme
+*/
+.house-card--light .house-card__title a,
+.house-card--light .house-card__spec,
+.house-card--light .house-card__desc {
+  color: white;
+}
+
+.house-card--light .house-card__spec::before {
+  background-color: white;
+}
+
+/*
+* House card
+* With space before
+*/
+.house-card--push-in {
+  padding-left: 65px;
+}
+
+.house-card--push-in .house-card__body {
+  width: calc( 100% - 575px);
+}
+
+.form {
+  position: relative;
+}
+
+.form__text-field {
+  width: 100%;
+  height: 40px;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px solid #f4f4f4;
+  border-radius: 360px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.form__text-field--search {
+  margin-bottom: 45px;
+}
+
+.form__label {
+  display: inline-block;
+  margin-left: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.form__label--light {
+  color: white;
+}
+
+.form__check-btn {
+  display: none;
+}
+
+.form__custom-check-btn {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form__check-btn:checked ~
+.form__custom-check-btn::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  display: block;
+  background-color: #796296;
+  border-radius: 50%;
 }

@@ -7,6 +7,7 @@
 .box-logo {
   display: block;
   width: 70px;
+  z-index: 2;
   
   img { width: 100%; }
 }
@@ -15,16 +16,9 @@
 * Wave shape tht contains
 * Building image of the home page
 */
-.box-header-mask-home {
+.box-header-mask {
   position: absolute;
-  top: -100px;
-  right: -400px;
-  left: 370px;
-  bottom: -580px;
   overflow: hidden;
-
-  background: url(../img/banner-home.jpg) no-repeat center / cover;
-  -webkit-mask: url(../img/header_mask_home.png) no-repeat bottom left / cover;
 
   &::after {
     content: '';
@@ -39,6 +33,30 @@
   }
 }
 
+.box-header-mask--home {
+  top: -100px;
+  right: -400px;
+  left: 370px;
+  bottom: -580px;
+
+  background: url(../img/banner-home.jpg) no-repeat center / cover;
+  -webkit-mask: url(../img/header_mask_home.png) no-repeat bottom left / cover;
+}
+
+.box-header-mask--buildings {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -820px;
+
+  padding-top: 135px;
+
+  background: url(../img/banner-buildings.jpg) no-repeat center / cover;
+  -webkit-mask: url(../img/header_mask_buildings.png) no-repeat bottom left / cover;
+
+  text-align: right;
+}
+
 /*
 * Description part
 * Of the home page
@@ -46,6 +64,12 @@
 .box-hero {
   width: 430px;
   float: left;
+}
+
+.box-hero--search {
+  float: right;
+  width: 450px;
+  text-align: right;
 }
 
 .box-hero__title {
