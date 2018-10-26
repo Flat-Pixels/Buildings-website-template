@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #SECTION-HOUSE CARDS
+\*------------------------------------*/
+
 /*
 * Default wrapper of houses cards
 */
@@ -78,4 +82,65 @@
   padding-left: 65px;
 
   .house-card__body { width: calc( 100% - 575px); }
+}
+
+/*------------------------------------*\
+  #SECTION-HOUSE SINGLE
+\*------------------------------------*/
+
+.house-single { position: relative; }
+
+.house-single__part {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.house-single__title {
+  margin-bottom: 30px;
+
+  font-size: convertPxToEm( 30px );
+  letter-spacing: 2px;
+  color: $primary-color;
+}
+
+.house-single__desc {
+  font-size: convertPxToEm( 16px );
+  font-weight: 300;
+  color: #6f6f6f;
+}
+
+.house-single__desc__part { margin-bottom: 1em; }
+
+.house-single__body {
+  width: calc( 100% - 514px );
+  padding-right: 30px;
+}
+
+.house-single__map {
+  width: 514px;
+  height: 514px;
+
+  background-color: $primary-color;
+}
+
+.house-single__spec {
+  width: 33.33%;
+  margin-bottom: 55px;
+  
+  font-family: $title-font;
+  font-size: convertPxToEm( 20px );
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #6f6f6f;
+}
+
+.house-single__spec__count {
+  display: block;
+
+  margin-top: 25px;
+  color: $primary-color;
+  font-size: convertPxToEm( 35px );
 }
