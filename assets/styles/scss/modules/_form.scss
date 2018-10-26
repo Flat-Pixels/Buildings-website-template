@@ -1,3 +1,6 @@
+/*------------------------------------*\
+  #SECTION-FORM
+\*------------------------------------*/
 .form { position: relative; }
 
 .form__text-field {
@@ -49,6 +52,7 @@
   cursor: pointer;
 
 }
+
 .form__check-btn:checked ~ 
 .form__custom-check-btn::after {
   content: '';

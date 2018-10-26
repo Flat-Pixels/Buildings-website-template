@@ -212,9 +212,9 @@ img {
   height: 100%;
 }
 
-/* ==|====================
-   Module/Box
-   ======================= */
+/*------------------------------------*\
+  #SECTION-BOX
+\*------------------------------------*/
 .box {
   position: relative;
 }
@@ -229,9 +229,11 @@ img {
   width: 100%;
 }
 
+/*------------------------------------*\
+  #SECTION-WAVE SHAPE OF PAGE HEADERS
+\*------------------------------------*/
 /*
-* Wave shape tht contains
-* Building image of the home page
+* Default wave style
 */
 .box-header-mask {
   position: absolute;
@@ -248,6 +250,9 @@ img {
   background: linear-gradient(rgba(118, 94, 131, 0.3), rgba(73, 43, 83, 0.6));
 }
 
+/*
+* Wave shape of Home page
+*/
 .box-header-mask--home {
   top: -100px;
   right: -400px;
@@ -257,17 +262,22 @@ img {
   -webkit-mask: url(../img/header_mask_home.png) no-repeat bottom left/cover;
 }
 
+/*
+* Wave shape of Buildings page
+*/
 .box-header-mask--buildings {
   top: 0;
   right: 0;
   left: 0;
-  bottom: -820px;
-  padding-top: 135px;
+  bottom: -830px;
   background: url(../img/banner-buildings.jpg) no-repeat center/cover;
   -webkit-mask: url(../img/header_mask_buildings.png) no-repeat bottom left/cover;
   text-align: right;
 }
 
+/*------------------------------------*\
+  #SECTION-BOX CONTAINS DESCRIPTION OF PAGES
+\*------------------------------------*/
 /*
 * Description part
 * Of the home page
@@ -275,12 +285,6 @@ img {
 .box-hero {
   width: 430px;
   float: left;
-}
-
-.box-hero--search {
-  float: right;
-  width: 450px;
-  text-align: right;
 }
 
 .box-hero__title {
@@ -296,6 +300,16 @@ img {
   font-size: 1.125em;
   font-weight: 300;
   color: #4e4e4e;
+}
+
+/*
+* Description search part
+* Of the buildings page
+*/
+.box-hero--search {
+  float: right;
+  width: 450px;
+  text-align: right;
 }
 
 .btn {
@@ -449,6 +463,9 @@ img {
   width: calc( 100% - 575px);
 }
 
+/*------------------------------------*\
+  #SECTION-FORM
+\*------------------------------------*/
 .form {
   position: relative;
 }
@@ -461,6 +478,7 @@ img {
   border: 1px solid #f4f4f4;
   border-radius: 360px;
   text-transform: uppercase;
+  text-align: left;
   outline: none;
 }
 
