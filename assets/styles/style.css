@@ -237,6 +237,9 @@ img {
   width: 100%;
 }
 
+/*------------------------------------*\
+  #SECTION-BANNER OF SINGLE-BUILDING PAGE
+\*------------------------------------*/
 .box-img-banner {
   width: 100%;
   height: 500px;
@@ -498,6 +501,15 @@ img {
   flex-wrap: wrap;
 }
 
+/*
+* House title
+* And description
+*/
+.house-single__hero {
+  width: calc( 100% - 514px);
+  padding-right: 30px;
+}
+
 .house-single__title {
   margin-bottom: 30px;
   font-size: 1.875em;
@@ -515,17 +527,23 @@ img {
   margin-bottom: 1em;
 }
 
-.house-single__body {
-  width: calc( 100% - 514px);
-  padding-right: 30px;
-}
-
+/*
+* House map place
+*/
 .house-single__map {
   width: 514px;
   height: 514px;
-  background-color: #796296;
+  overflow: hidden;
+  /*Delete if you add a real map */
 }
 
+.house-single__map img {
+  width: 100%;
+}
+
+/*
+* House specifications
+*/
 .house-single__spec {
   width: 33.33%;
   margin-bottom: 55px;
@@ -537,7 +555,7 @@ img {
   color: #6f6f6f;
 }
 
-.house-single__spec__count {
+.house-single__spec__number {
   display: block;
   margin-top: 25px;
   color: #796296;

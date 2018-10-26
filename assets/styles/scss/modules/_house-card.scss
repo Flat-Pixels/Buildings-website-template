@@ -5,6 +5,7 @@
 /*
 * Default wrapper of houses cards
 */
+
 .house-card-group { margin-bottom: $secondary-white-space; }
 
 .house-card {
@@ -66,6 +67,7 @@
 * House card
 * With light theme
 */
+
 .house-card--light {
   .house-card__title a,
   .house-card__spec,
@@ -78,6 +80,7 @@
 * House card
 * With space before
 */
+
 .house-card--push-in {
   padding-left: 65px;
 
@@ -97,6 +100,17 @@
   flex-wrap: wrap;
 }
 
+
+/*
+* House title
+* And description
+*/
+
+.house-single__hero {
+  width: calc( 100% - 514px );
+  padding-right: 30px;
+}
+
 .house-single__title {
   margin-bottom: 30px;
 
@@ -113,17 +127,24 @@
 
 .house-single__desc__part { margin-bottom: 1em; }
 
-.house-single__body {
-  width: calc( 100% - 514px );
-  padding-right: 30px;
-}
+
+/*
+* House map place
+*/
 
 .house-single__map {
   width: 514px;
   height: 514px;
+  overflow: hidden;
 
-  background-color: $primary-color;
+  /*Delete if you add a real map */
+  img{ width: 100%; }
 }
+
+
+/*
+* House specifications
+*/
 
 .house-single__spec {
   width: 33.33%;
@@ -137,7 +158,7 @@
   color: #6f6f6f;
 }
 
-.house-single__spec__count {
+.house-single__spec__number {
   display: block;
 
   margin-top: 25px;
