@@ -7,10 +7,11 @@
   position: relative;
 
   display: inline-block;
-  padding: 0 150px;
-
+  padding: 0 100px;
+  
+  font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   color: $primary-color;
 
   &::before, &::after {
@@ -19,7 +20,7 @@
     position: absolute;
     top: 50%;
 
-    width: 100px;
+    width: 70px;
     height: 2px;
 
     background-color: $primary-color;
@@ -29,4 +30,9 @@
 
   &::before { left: 0; }
   &::after { right: 0; }
+}
+
+.section-title__h--simple {
+  &::before,
+  &::after { display: none; }
 }

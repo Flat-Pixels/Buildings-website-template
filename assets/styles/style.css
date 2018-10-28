@@ -100,6 +100,12 @@ img {
   display: block;
 }
 
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
 /* Layouts */
 .page-header {
   position: relative;
@@ -333,6 +339,16 @@ img {
   text-align: right;
 }
 
+.box-hero--about {
+  float: initial;
+  width: 580px;
+  margin: 0 auto;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  color: #423f43;
+}
+
 .btn {
   display: block;
   width: 300px;
@@ -357,6 +373,10 @@ img {
   color: #796296;
 }
 
+.btn--secondary {
+  box-shadow: initial;
+}
+
 .btn--center-x {
   margin: 0 auto;
 }
@@ -369,9 +389,10 @@ img {
 .section-title__h {
   position: relative;
   display: inline-block;
-  padding: 0 150px;
+  padding: 0 100px;
+  font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   color: #796296;
 }
 
@@ -379,7 +400,7 @@ img {
   content: '';
   position: absolute;
   top: 50%;
-  width: 100px;
+  width: 70px;
   height: 2px;
   background-color: #796296;
   transform: translateY(-50%);
@@ -391,6 +412,10 @@ img {
 
 .section-title__h::after {
   right: 0;
+}
+
+.section-title__h--simple::before, .section-title__h--simple::after {
+  display: none;
 }
 
 /*------------------------------------*\
@@ -569,20 +594,50 @@ img {
   position: relative;
 }
 
+.form--contact {
+  width: 650px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  background-color: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 1px 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+  justify-content: justify;
+  margin-bottom: 15px;
+}
+
 .form__text-field {
   width: 100%;
   height: 40px;
-  padding: 10px 30px;
+  padding: 10px 15px;
   background-color: white;
   border: 1px solid #f4f4f4;
   border-radius: 360px;
-  text-transform: uppercase;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   text-align: left;
-  outline: none;
+}
+
+.text-field--contact-left {
+  margin-right: 15px;
+}
+
+.text-field--contact-right {
+  margin-left: 15px;
+}
+
+.form__text-field--area {
+  height: 175px;
+  border-radius: 0;
 }
 
 .form__text-field--search {
   margin-bottom: 45px;
+  text-transform: uppercase;
 }
 
 .form__label {

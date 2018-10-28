@@ -42,3 +42,9 @@ a {
 li { list-style-type: none; }
 
 img { display: block; }
+
+input,
+textarea {
+  border: none;
+  outline: none;
+}

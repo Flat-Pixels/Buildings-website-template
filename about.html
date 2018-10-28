@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Best-Buildings | Building Singapour</title>
+  <title>Best-Buildings | About us</title>
   <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
@@ -22,87 +22,85 @@
     </div>
   </header>
 
-  <section class="box box-img-banner">
-    <img src="assets/img/banner-single.jpg" alt="Singapour palas" />
+  <section class="wrapper wrapper--middle">
+
+    <div class="section-title">
+      <h2 class="section-title__h section-title__h--simple">About us</h2>
+    </div>
+
+    <div class="box box-hero box-hero--about">
+      <p>
+        We are here to show you the most beautiful 
+        buildings that man has ever built. We give ourselves 
+        the goal to make you visit them online by giving information 
+        about them and to make them visit you phyically. 
+        And why not contact us stay there for a while? 
+      </p>
+    </div>
+
   </section>
 
-  <section>
 
-    <div class="house-single">
-      <div class="wrapper wrapper--middle">
+  <section class="wrapper wrapper--bottom">
+    <div class="section-title">
+      <h2 class="section-title__h">Our headquarters</h2>
+    </div>
 
-        <div class="house-single__part">
-          <div class="house-single__hero">
-            <h3 class="house-single__title">SINGAPOUR PALAS</h3>
+    <div class="house-card-group">
 
-            <div class="house-single__desc">
-
-              <p class="house-single__desc__part">
-                Not only the oldest, but also the most beautiful palace 
-                that has ever existed. All history books talk about it. 
-                It is time to see this wonderful place with your own eyes.
-              </p>
-
-              <p class="house-single__desc__part">
-                It embodies unrelenting human aspirations to build even higher. 
-                It conjures a number of valid questions in our minds. 
-                The foremost and fundamental question that is often asked: 
-                Why tall buildings? This review paper seeks to answer the question by 
-                laying out arguments against and for tall buildings. Then, it provides a 
-                brief account of the historic and recent developments of tall buildings 
-                including their status during the current economic recession. 
-                The paper argues that as cities continue to expand horiz
-                ontally, to safeguard against their reaching an eventual breaking point, 
-                the tall building as a building type is a possible solution by way of 
-                conquering vertical space through agglomeration and densification.
-              </p>
-
-            </div> 
-          </div>
-
-          <div class="house-single__map">
-            <!--Delete if you wanna add a real map -->
-            <img src="assets/img/map.jpg" alt="Place of Singapour palas" />
-          </div>
-
+      <div class="house-card">
+        <div class="house-card__img">
+          <img src="assets/img/item_list_1.jpg" alt="Building Berverly house"/>
         </div>
 
-      </div>
-      
-      <div class="wrapper wrapper--bottom">
+        <div class="house-card__body">
+          <h3 class="house-card__title"><a href="single-building.html">Berverly house</a></h3>
 
-        <div class="house-single__part">
+          <div>
+            <ul class="house-card__specs-list">
+              <li class="house-card__spec">13 Floors</li>
+              <li class="house-card__spec">136 Bathrooms</li>
+              <li class="house-card__spec">52 Bedrooms</li>
+              <li class="house-card__spec">Football fields and playground</li>
+            </ul>
 
-          <div class="house-single__spec">
-            <span>Floors</span>
-            <span class="house-single__spec__number">6</span>
+            <p class="house-card__desc">
+              If you go to Beverly Hills, come and visit our 
+              rest home that has everything to please you: 
+              "Football field, playground for your children etc ..." 
+              A service is available 24/24.
+            </p>
           </div>
-
-          <div class="house-single__spec">
-            <span>Bathrooms</span>
-            <span class="house-single__spec__number">6</span>
-          </div>
-
-          <div class="house-single__spec">
-            <span>Bedrooms</span>
-            <span class="house-single__spec__number">6</span>
-          </div>
-
-          <div class="house-single__spec">
-            <span>More specifications</span>
-            <span class="house-single__spec__number">...</span>
-          </div>
-
         </div>
-
       </div>
 
     </div>
-    
-    <div class="wrapper wrapper--bottom">
-      <a class="btn btn--center-x" href="#">Like this place</a>
+
+  </section>
+
+  <section class="wrapper wrapper--bottom">
+    <div class="section-title">
+      <h2 class="section-title__h">Send us a message</h2>
     </div>
 
+
+    <div>
+      <form class="form form--contact">
+
+        <div class="form__group">
+          <input type="text" class="form__text-field text-field--contact-left" placeholder="Full name..." required />
+          <input type="email" class="form__text-field text-field--contact-right" placeholder="Email adress..." required />
+        </div>
+
+        <div class="form__group">
+          <textarea class="form__text-field form__text-field--area" placeholder="Your message content..."></textarea>
+        </div>
+
+        <div class="form__group">
+          <input type="submit" class="btn btn--secondary btn--center-x" value="Send now" />
+        </div>
+      </form>
+    </div>
   </section>
 
   <footer class="page-footer">

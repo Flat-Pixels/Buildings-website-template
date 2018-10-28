@@ -114,3 +114,14 @@
   width: 450px;
   text-align: right;
 }
+
+.box-hero--about {
+  float: initial;
+  width: 580px;
+  margin: 0 auto;
+  
+  font-size: convertPxToEm( 18px );
+  font-weight: 300;
+  text-align: center;
+  color: #423f43;
+}
