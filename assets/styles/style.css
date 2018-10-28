@@ -340,9 +340,9 @@ textarea {
 }
 
 .box-hero--about {
-  float: initial;
   width: 580px;
   margin: 0 auto;
+  float: initial;
   font-size: 1.125em;
   font-weight: 300;
   text-align: center;
@@ -381,6 +381,9 @@ textarea {
   margin: 0 auto;
 }
 
+/*------------------------------------*\
+  #SECTION-PAGE SECTIONS TITLE
+\*------------------------------------*/
 .section-title {
   text-align: center;
   margin-bottom: 50px;
@@ -590,10 +593,16 @@ textarea {
 /*------------------------------------*\
   #SECTION-FORM
 \*------------------------------------*/
+/*
+* Default form
+*/
 .form {
   position: relative;
 }
 
+/*
+* Contact form
+*/
 .form--contact {
   width: 650px;
   margin: 0 auto;
@@ -604,6 +613,9 @@ textarea {
   box-shadow: 1px 15px 40px rgba(0, 0, 0, 0.05);
 }
 
+/*
+* Group of inputs
+*/
 .form__group {
   display: flex;
   align-items: center;
@@ -622,6 +634,11 @@ textarea {
   text-align: left;
 }
 
+/*
+* Inputs
+* Display inline
+* in a group
+*/
 .text-field--contact-left {
   margin-right: 15px;
 }
@@ -635,6 +652,9 @@ textarea {
   border-radius: 0;
 }
 
+/*
+* Search input in building page
+*/
 .form__text-field--search {
   margin-bottom: 45px;
   text-transform: uppercase;

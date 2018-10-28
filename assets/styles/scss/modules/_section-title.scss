@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #SECTION-PAGE SECTIONS TITLE
+\*------------------------------------*/
+
 .section-title{
   text-align: center;
   margin-bottom: $secondary-white-space;
@@ -16,10 +20,8 @@
 
   &::before, &::after {
     content: '';
-
     position: absolute;
     top: 50%;
-
     width: 70px;
     height: 2px;
 

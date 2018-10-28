@@ -1,9 +1,15 @@
 /*------------------------------------*\
   #SECTION-FORM
 \*------------------------------------*/
+
+/*
+* Default form
+*/
 .form { position: relative; }
 
-
+/*
+* Contact form
+*/
 .form--contact {
   width: 650px;
   
@@ -16,6 +22,9 @@
   box-shadow: 1px 15px 40px rgba(0, 0, 0, 0.05);
 }
 
+/*
+* Group of inputs
+*/
 .form__group {
   display: flex;
   align-items: center;
@@ -39,18 +48,29 @@
 
 }
 
+/*
+* Inputs
+* Display inline
+* in a group
+*/
 .text-field--contact-left { margin-right: 15px; }
 .text-field--contact-right { margin-left: 15px; }
+
 
 .form__text-field--area {
   height: 175px;
   border-radius: 0;
 }
 
+
+/*
+* Search input in building page
+*/
 .form__text-field--search {
   margin-bottom: 45px;
   text-transform: uppercase;
 }
+
 
 .form__label {
   display: inline-block;
