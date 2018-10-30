@@ -28,6 +28,13 @@
 
 .btn--secondary { box-shadow: initial; }
 
-.btn--center-x {
-  margin: 0 auto;
+.btn--center-x { margin: 0 auto; }
+
+@media screen and ( max-width: $query-breakpoint1 ) {
+  .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+  }
 }

@@ -106,6 +106,13 @@ textarea {
   outline: none;
 }
 
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    overflow-x: initial;
+  }
+}
+
 /* Layouts */
 .page-header {
   position: relative;
@@ -145,6 +152,14 @@ textarea {
 
 .wrapper--bottom {
   padding-bottom: 85px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .page-footer {
@@ -189,6 +204,22 @@ textarea {
   transition: all 0.2s;
 }
 
+.nav-mobile-btn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.nav-mobile-btn .bar {
+  display: block;
+  width: 100%;
+  height: 6px;
+  margin: 5px 0;
+  background-color: #796296;
+}
+
 /*------------------------------------*\
   #SECTION-HEADER NAVIGATION
 \*------------------------------------*/
@@ -224,6 +255,37 @@ textarea {
   fill: white;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-mobile-btn {
+    display: block;
+  }
+  .nav__item--social-btn {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+  }
+  .nav-primary {
+    position: fixed;
+    top: 70px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: all 0.2s ease-in;
+  }
+  .nav-primary.visible {
+    left: 0;
+  }
+  .nav-primary .nav__item {
+    color: #796296;
+    text-align: right;
+    padding: 20px;
+    border-bottom: 1px solid #f7f7f7;
+  }
 }
 
 /*------------------------------------*\
@@ -349,6 +411,28 @@ textarea {
   color: #423f43;
 }
 
+@media screen and (max-width: 800px) {
+  .box-header-mask {
+    display: none;
+  }
+  .box-header-mask--buildings {
+    display: block;
+  }
+  .box-hero {
+    width: 100%;
+    float: initial;
+  }
+  .box-hero .btn {
+    margin: 0 auto;
+  }
+  .box-hero--search {
+    text-align: center;
+  }
+  .box-img-banner {
+    height: auto;
+  }
+}
+
 .btn {
   display: block;
   width: 300px;
@@ -379,6 +463,15 @@ textarea {
 
 .btn--center-x {
   margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+  }
 }
 
 /*------------------------------------*\
@@ -419,6 +512,15 @@ textarea {
 
 .section-title__h--simple::before, .section-title__h--simple::after {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .section-title__h {
+    padding: 0 50px;
+  }
+  .section-title__h::before, .section-title__h::after {
+    width: 40px;
+  }
 }
 
 /*------------------------------------*\
@@ -493,14 +595,15 @@ textarea {
 * House card
 * With light theme
 */
-.house-card--light .house-card__title a,
-.house-card--light .house-card__spec,
-.house-card--light .house-card__desc {
-  color: white;
+.house-card--light {
+  height: 480px;
+  border-radius: 5px;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
 }
 
-.house-card--light .house-card__spec::before {
-  background-color: white;
+.house-card--light .house-card__body {
+  padding: 20px 20px 20px 0;
 }
 
 /*
@@ -590,6 +693,62 @@ textarea {
   font-size: 2.1875em;
 }
 
+@media screen and (max-width: 800px) {
+  .house-card,
+  .house-card--push-in {
+    flex-direction: column;
+    padding: 0;
+  }
+  .house-card .house-card__img,
+  .house-card--push-in .house-card__img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 25px auto;
+  }
+  .house-card .house-card__body,
+  .house-card--push-in .house-card__body {
+    width: 100%;
+  }
+  .house-card .house-card__specs-list,
+  .house-card--push-in .house-card__specs-list {
+    margin: 20px -10px;
+    font-size: 0;
+  }
+  .house-card .house-card__spec,
+  .house-card--push-in .house-card__spec {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    width: calc( 50% - 20px);
+  }
+  .house-card .house-card__spec,
+  .house-card .house-card__desc,
+  .house-card--push-in .house-card__spec,
+  .house-card--push-in .house-card__desc {
+    font-size: 16px;
+  }
+  .house-card--light {
+    height: auto;
+  }
+  .house-card--light .house-card__body {
+    padding: 0 20px 20px 20px;
+  }
+  .house-single__hero {
+    width: 100%;
+    padding: 0;
+  }
+  .house-single__map {
+    width: 100%;
+    height: auto;
+  }
+  .house-single__spec {
+    font-size: 1em;
+  }
+  .house-single__spec__number {
+    font-size: 1.25em;
+  }
+}
+
 /*------------------------------------*\
   #SECTION-FORM
 \*------------------------------------*/
@@ -619,7 +778,7 @@ textarea {
 .form__group {
   display: flex;
   align-items: center;
-  justify-content: justify;
+  justify-content: space-between;
   margin-bottom: 15px;
 }
 
@@ -698,4 +857,24 @@ textarea {
   display: block;
   background-color: #796296;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .form__label {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+  .form--contact {
+    width: 100%;
+    padding: 20px;
+  }
+  .form__group {
+    flex-direction: column;
+  }
+  .text-field--contact-left {
+    margin: 0 0 15px 0;
+  }
+  .text-field--contact-right {
+    margin: 0;
+  }
 }

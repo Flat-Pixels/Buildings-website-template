@@ -75,6 +75,9 @@ $base-font-size: 16px;
 $default-white-space: 85px;
 $secondary-white-space: 50px;
 
+//Break point for media queries
+$query-breakpoint1: 800px;
+
 // Functions
 @function convertPxToEm( $size ){
   @return ( $size / $base-font-size ) * 1em;

@@ -125,3 +125,20 @@
   text-align: center;
   color: #423f43;
 }
+
+@media screen and ( max-width: $query-breakpoint1 ) {
+  .box-header-mask { display: none; }
+
+  .box-header-mask--buildings { display: block; }
+
+  .box-hero {
+    width: 100%;
+    float: initial;
+  }
+
+  .box-hero .btn { margin: 0 auto; }
+
+  .box-hero--search { text-align: center; }
+
+  .box-img-banner { height: auto; }
+}

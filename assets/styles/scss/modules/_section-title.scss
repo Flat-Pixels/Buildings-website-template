@@ -38,3 +38,14 @@
   &::before,
   &::after { display: none; }
 }
+
+
+@media screen and ( max-width: $query-breakpoint1 ) {
+
+  .section-title__h {
+    padding: 0 50px;
+
+    &::before, &::after { width: 40px; }
+  }
+
+}

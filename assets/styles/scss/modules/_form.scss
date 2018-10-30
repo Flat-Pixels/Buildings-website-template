@@ -28,7 +28,7 @@
 .form__group {
   display: flex;
   align-items: center;
-  justify-content: justify;
+  justify-content: space-between;
 
   margin-bottom: 15px;
 }
@@ -116,4 +116,21 @@
 
   background-color: $primary-color;
   border-radius: 50%;
+}
+
+@media screen and ( max-width: $query-breakpoint1 ) {
+  .form__label {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+
+  .form--contact {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form__group { flex-direction: column; }
+
+  .text-field--contact-left { margin: 0 0 15px 0; }
+  .text-field--contact-right { margin: 0; }
 }
