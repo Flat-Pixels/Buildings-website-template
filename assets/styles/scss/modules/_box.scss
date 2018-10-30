@@ -15,6 +15,7 @@
 /*------------------------------------*\
   #SECTION-BANNER OF SINGLE-BUILDING PAGE
 \*------------------------------------*/
+
 .box-img-banner {
   width: 100%;
   height: 500px;
@@ -71,7 +72,7 @@
   bottom: -830px;
 
   background: url(../img/banner-buildings.jpg) no-repeat center / cover;
-  -webkit-mask: url(../img/header_mask_buildings.png) no-repeat bottom left / cover;
+  mask: url(../img/header_mask_buildings.png) no-repeat bottom left / cover;
 
   text-align: right;
 }

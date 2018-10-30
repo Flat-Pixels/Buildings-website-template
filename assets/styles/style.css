@@ -1,4 +1,3 @@
-/* Site settings */
 /*------------------------------------*\
   #SECTION-FONTS CONFIGURATION
 \*------------------------------------*/
@@ -154,6 +153,9 @@ textarea {
   padding-bottom: 85px;
 }
 
+/*------------------------------------*\
+  #SECTION-FONTS CONFIGURATION
+\*------------------------------------*/
 @media screen and (max-width: 800px) {
   .wrapper {
     width: 100%;
@@ -270,8 +272,8 @@ textarea {
     position: fixed;
     top: 70px;
     left: 100%;
+    bottom: 0;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -360,7 +362,7 @@ textarea {
   left: 0;
   bottom: -830px;
   background: url(../img/banner-buildings.jpg) no-repeat center/cover;
-  -webkit-mask: url(../img/header_mask_buildings.png) no-repeat bottom left/cover;
+  mask: url(../img/header_mask_buildings.png) no-repeat bottom left/cover;
   text-align: right;
 }
 
