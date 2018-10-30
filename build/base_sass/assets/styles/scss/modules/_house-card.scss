@@ -1,0 +1,224 @@
+/*------------------------------------*\
+  #SECTION-HOUSE CARDS
+\*------------------------------------*/
+
+/*
+* Default wrapper of houses cards
+*/
+.house-card-group { margin-bottom: $secondary-white-space; }
+
+.house-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.house-card__img {
+  width: 480px;
+  height: 480px;
+  
+  margin-right: 30px;
+  background-color: white;
+
+  img { width: 100%; }
+}
+
+.house-card__body { width: calc( 100% - 510px); }
+
+.house-card__title {
+  font-family: $base-font2;
+  font-size: convertPxToEm( 25px );
+  font-weight: 300;
+
+  a:hover { text-decoration: underline; }
+}
+
+.house-card__specs-list { margin: 40px 0; }
+
+.house-card__spec {
+  display: block;
+  margin-bottom: 15px;
+
+  vertical-align: middle;
+
+  color: #a7a7a7;
+  font-size: convertPxToEm( 14px );
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    background-color: $primary-color;
+    margin-right: 15px;
+
+    vertical-align: middle;
+  }
+}
+
+.house-card__desc { color: #6f6f6f; }
+
+/*
+* House card
+* With light theme
+*/
+
+.house-card--light {
+  height: 480px;
+
+  border-radius: 5px;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+
+  .house-card__body { padding: 20px 20px 20px 0; }
+}
+
+/*
+* House card
+* With space before
+*/
+
+.house-card--push-in {
+  padding-left: 65px;
+
+  .house-card__body { width: calc( 100% - 575px); }
+}
+
+/*------------------------------------*\
+  #SECTION-HOUSE SINGLE
+\*------------------------------------*/
+
+.house-single { position: relative; }
+
+.house-single__part {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+/*
+* House title
+* And description
+*/
+
+.house-single__hero {
+  width: calc( 100% - 514px );
+  padding-right: 30px;
+}
+
+.house-single__title {
+  margin-bottom: 30px;
+
+  font-size: convertPxToEm( 30px );
+  letter-spacing: 2px;
+  color: $primary-color;
+}
+
+.house-single__desc {
+  font-size: convertPxToEm( 16px );
+  font-weight: 300;
+  color: #6f6f6f;
+}
+
+.house-single__desc__part { margin-bottom: 1em; }
+
+
+/*
+* House map place
+*/
+
+.house-single__map {
+  width: 514px;
+  height: 514px;
+  overflow: hidden;
+
+  /*Delete if you add a real map */
+  img{ width: 100%; }
+}
+
+
+/*
+* House specifications
+*/
+
+.house-single__spec {
+  width: 33.33%;
+  margin-bottom: 55px;
+  
+  font-family: $title-font;
+  font-size: convertPxToEm( 20px );
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #6f6f6f;
+}
+
+.house-single__spec__number {
+  display: block;
+
+  margin-top: 25px;
+  color: $primary-color;
+  font-size: convertPxToEm( 35px );
+}
+
+@media screen and ( max-width: $query-breakpoint1 ) {
+
+  .house-card,
+  .house-card--push-in {
+    flex-direction: column;
+    padding: 0;
+
+    .house-card__img {
+      width: 100%;
+      height: auto;
+
+      margin: 0 auto 25px auto;
+    }
+
+    .house-card__body { width: 100%; }
+    
+    .house-card__specs-list {
+      margin: 20px -10px;
+
+      font-size: 0;
+    }
+
+    .house-card__spec {
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+      width: calc( 50% - 20px );
+    }
+
+    .house-card__spec,
+    .house-card__desc {
+      font-size: 16px;
+    }
+  }
+
+  .house-card--light {
+    height: auto;
+    .house-card__body { padding: 0 20px 20px 20px; }
+
+  }
+
+  .house-single__hero {
+    width: 100%;
+    padding: 0;
+  }
+
+  .house-single__map {
+    width: 100%;
+    height: auto;
+  }
+
+  .house-single__spec { font-size: convertPxToEm( 16px ); }
+
+  .house-single__spec__number { font-size: convertPxToEm( 20px ); }
+}

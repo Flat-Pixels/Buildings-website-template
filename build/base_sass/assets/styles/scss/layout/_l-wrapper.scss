@@ -1,0 +1,26 @@
+.wrapper {
+  position: relative;
+  width: 984px;
+
+  margin: 0 auto;
+}
+
+.wrapper--middle { padding: $default-white-space 0; }
+
+.wrapper--top { padding-top: $default-white-space; }
+
+.wrapper--bottom { padding-bottom: $default-white-space; }
+
+
+
+
+/*------------------------------------*\
+  #SECTION-FONTS CONFIGURATION
+\*------------------------------------*/
+@media screen and ( max-width: $query-breakpoint1 ) {
+  .wrapper {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

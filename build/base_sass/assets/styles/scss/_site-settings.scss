@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+/*------------------------------------*\
+  #SECTION-FONTS CONFIGURATION
+\*------------------------------------*/
+@font-face {
+  font-family: 'Fjallaone';
+  src: url('../fonts/fjallaone-regular-webfont.woff2') format('woff2'),
+       url('../fonts/fjallaone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('../fonts/ptf75f-webfont.woff2') format('woff2'),
+         url('../fonts/ptf75f-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+// Fonts
+$base-font: Roboto, Helvetica, Arial, sans-serif;
+$base-font2: "Open Sans", Helvetica, Arial, sans-serif;
+$title-font: FjallaOne, serif;
+$title-font2: "PT Serif", FjallaOne, sans-serif;
+
+// Colors
+// -----------------------------
+$back-color: #f4f4f4;
+$primary-color: #796296;
+$secondary-color: #423f43;
+
+// Sizes
+$base-font-size: 16px;
+
+// White spaces
+$default-white-space: 85px;
+$secondary-white-space: 50px;
+
+//Break point for media queries
+$query-breakpoint1: 800px;
+
+// Functions
+@function convertPxToEm( $size ){
+  @return ( $size / $base-font-size ) * 1em;
+}
